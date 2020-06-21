@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using hoor.Models;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Routing;
 
 namespace hoor.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly LinkGenerator _linkGenerator;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,LinkGenerator link)
         {
             _logger = logger;
+            _linkGenerator = link;
         }
 
         public IActionResult Index()
@@ -27,6 +30,11 @@ namespace hoor.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+        public IActionResult Link()
+        {
+            var link=_linkGenerator.GetPathByAction("Privacy","Home");
+            return Content(link);
         }
 
         public string Contact()

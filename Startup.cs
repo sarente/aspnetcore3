@@ -56,7 +56,7 @@ namespace hoor
             options.DefaultFileNames.Clear();
             options.DefaultFileNames.Add("mydefault.html");
             app.UseDefaultFiles(options);
-            
+
             //todo: have to learn -- add some codes
             app.UseStaticFiles(new StaticFileOptions
             {
@@ -85,6 +85,10 @@ namespace hoor
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "blog",
+                    pattern: "{controller=Home}/{action=Link}/{id?}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
