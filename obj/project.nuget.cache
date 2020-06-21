@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YjA9M1f93ibiMXcfOEpOvfo+1lv0F9Jgi+s6xiE87t9a9qzRBpjagY6JbaxTV/wUW3BTbwvViOuh48KfJ+IFWQ==",
+  "dgSpecHash": "Vcg3WwzeICFoFKzlpSr33wQzpWDpAXz8+5ttHmSgJ9rEeoZxkvVWsNrUvXWwYlxVInYZkRMBzAWFXUvgkaaRnw==",
   "success": true,
   "projectFilePath": "C:\\Work\\asp_net_core\\hoor\\hoor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\K1fathi\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.5\\microsoft.extensions.fileproviders.abstractions.3.1.5.nupkg.sha512",
+    "C:\\Users\\K1fathi\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.5\\microsoft.extensions.fileproviders.physical.3.1.5.nupkg.sha512",
+    "C:\\Users\\K1fathi\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.5\\microsoft.extensions.filesystemglobbing.3.1.5.nupkg.sha512",
+    "C:\\Users\\K1fathi\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\K1fathi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []

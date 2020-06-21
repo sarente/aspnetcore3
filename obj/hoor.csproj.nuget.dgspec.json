@@ -39,6 +39,10 @@
       "frameworks": {
         "net5.0": {
           "dependencies": {
+            "Microsoft.Extensions.FileProviders.Physical": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
