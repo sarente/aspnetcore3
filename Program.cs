@@ -18,6 +18,7 @@ namespace hoor
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                
                 //todo: by k1
                 .ConfigureLogging(Logging=>{
                     Logging.ClearProviders();
@@ -28,6 +29,8 @@ namespace hoor
                     //todo: by k1
                     //webBuilder.UseStartup<MyStartup>();
                     webBuilder.UseStartup<Startup>();
+                    //todo: by k1
+                    webBuilder.UseWebRoot("Public");
                 });
     }
 }
