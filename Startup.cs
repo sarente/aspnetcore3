@@ -51,7 +51,12 @@ namespace hoor
             app.UseStatusCodePages("text/plain", "Status code page, status code: {0}");
 
             app.UseHttpsRedirection();
-
+            //todo: by k1
+            var options=new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add("mydefault.html");
+            app.UseDefaultFiles(options);
+            
             //todo: have to learn -- add some codes
             app.UseStaticFiles(new StaticFileOptions
             {
