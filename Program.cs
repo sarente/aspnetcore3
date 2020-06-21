@@ -18,6 +18,11 @@ namespace hoor
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                //todo: by k1
+                .ConfigureLogging(Logging=>{
+                    Logging.ClearProviders();
+                    Logging.AddConsole();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     //todo: by k1

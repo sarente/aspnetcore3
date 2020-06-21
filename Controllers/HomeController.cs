@@ -32,11 +32,11 @@ namespace hoor.Controllers
         public string Contact()
         {
             var user= new User(){
-                Username="Keyvan",
+                Username="Javad",
                 Fullname="Keyvan Fathi",
-                Password="1234",
+                Password="12345",
             };
-            
+
             var json=JsonConvert.SerializeObject(user,Formatting.Indented);
 
             return json;
