@@ -39,7 +39,7 @@ namespace hoor.Controllers
 
             var json=JsonConvert.SerializeObject(user,Formatting.Indented);
             _logger.LogInformation(json);
-            //throw new Exception("This is a exception");
+            throw new Exception("This is a exception");
             return json;
         }
 
