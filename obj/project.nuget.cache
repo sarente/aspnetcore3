@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YjA9M1f93ibiMXcfOEpOvfo+1lv0F9Jgi+s6xiE87t9a9qzRBpjagY6JbaxTV/wUW3BTbwvViOuh48KfJ+IFWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Work\\asp_net_core\\hoor\\hoor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\K1fathi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
