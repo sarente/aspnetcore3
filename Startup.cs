@@ -49,11 +49,27 @@ namespace hoor
             app.UseStatusCodePages("text/plain", "Status code page, status code: {0}");
 
             app.UseHttpsRedirection();
-            
+
             //todo: have to learn -- add some codes
-            app.UseStaticFiles(new StaticFileOptions{
-                FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"node_modules")),
-                RequestPath="/3rdParty"
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(),
+                        "node_modules"
+                    )
+                ),
+                RequestPath = "/3rdParty"
+            });
+
+            //todo: have to learn -- add some codes
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(),
+                        "public","images"
+                    )
+                ),
+                RequestPath = "/my-images"
             });
 
             app.UseRouting();
